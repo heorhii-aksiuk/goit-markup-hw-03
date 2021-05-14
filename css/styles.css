@@ -63,17 +63,17 @@ img {
 }
 
 /* Шапка сайта */
-.header-container,
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
 .navigation,
 .menu {
   display: flex;
   align-items: center;
 }
-
-/* .main-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-} */
 
 .logo {
   margin-right: 93px;
@@ -90,7 +90,7 @@ img {
 .menu-link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
