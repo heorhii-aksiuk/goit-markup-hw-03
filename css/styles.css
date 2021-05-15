@@ -130,7 +130,20 @@ img {
   background-color: #2f303a;
 }
 
+.hero-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .heading {
+  padding-left: 280px;
+  padding-right: 280px;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -140,6 +153,12 @@ img {
 }
 
 .hero-button {
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   color: var(--secondary-text-color);
   font-family: var(--main-font);
   font-weight: 700;
@@ -147,7 +166,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
+
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
