@@ -249,7 +249,7 @@ img {
   background-color: var(--secondary-background-color);
 }
 
-.team-section {
+.section {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -257,7 +257,6 @@ img {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--secondary-background-color);
 }
 
 .team-list {
@@ -322,7 +321,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -351,26 +350,76 @@ img {
 
 /* Секция портфолио */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
+  min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
   font-family: var(--main-font);
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   background-color: var(--secondary-background-color);
+
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .portfolio-heading {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-paragraph {
