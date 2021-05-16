@@ -306,12 +306,24 @@ img {
   background-color: #2f303a;
 }
 
+.main-footer-section {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-logo {
   color: var(--secondary-text-color);
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-accent {
@@ -327,9 +339,14 @@ img {
 .address {
   color: var(--secondary-text-color);
 }
+
 .address:focus,
 .address:hover {
   color: var(--accent-color);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Секция портфолио */
