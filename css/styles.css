@@ -64,10 +64,13 @@ img {
 }
 
 /* Шапка сайта */
+
+.main-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .navigation,
@@ -128,18 +131,10 @@ img {
 
 /* Секция герой */
 .hero {
-  text-align: center;
-  background-color: #2f303a;
-}
-
-.hero-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  background-color: #2f303a;
 }
 
 .heading {
@@ -180,14 +175,9 @@ img {
 }
 
 /* Секция особенностей */
-.features-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.features {
   padding-top: 94px;
   padding-bottom: 47px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .features-list {
@@ -221,19 +211,18 @@ img {
   line-height: 1.71;
 }
 
+.features-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
 
 /* Секция "Чем мы занимаемся" */
-.doing-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.doing {
   padding-top: 47px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .doing-list {
@@ -245,18 +234,10 @@ img {
 }
 
 /* Секция "Наша команда" */
-.team-background {
-  background-color: var(--secondary-background-color);
-}
-
-.section {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--secondary-background-color);
 }
 
 .team-list {
@@ -302,17 +283,9 @@ img {
 /* Футер сайта */
 
 .main-footer {
-  background-color: #2f303a;
-}
-
-.main-footer-section {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #2f303a;
 }
 
 .footer-logo {
@@ -335,7 +308,7 @@ img {
   line-height: 1.71;
 }
 
-.address {
+.address-link {
   color: var(--secondary-text-color);
 }
 
@@ -344,11 +317,16 @@ img {
   color: var(--accent-color);
 }
 
-.address-item:not(:last-child) {
+.footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* Секция портфолио */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filter-list {
   display: flex;
