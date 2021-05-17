@@ -291,10 +291,6 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-logo-accent {
-  color: var(--accent-color);
-}
-
 .footer-contacts {
   font-style: normal;
   font-size: 14px;
@@ -304,10 +300,6 @@ img {
 .address-link {
   color: var(--secondary-text-color);
 }
-.address-link:focus,
-.address-link:hover {
-  color: var(--accent-color);
-}
 
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
@@ -316,7 +308,9 @@ img {
 .footer-contacts-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footer-logo-accent,
+.address-link:focus,
+.address-link:hover,
 .footer-contacts-link:focus,
 .footer-contacts-link:hover {
   color: var(--accent-color);
